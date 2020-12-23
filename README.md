@@ -1,7 +1,7 @@
 # docker build commands
 
-gcloud builds submit --tag gcr.io/	cart-284211/restify1
-gcloud run deploy --image gcr.io/	cart-284211/restify1 --platform managed
+gcloud builds submit --tag gcr.io/cart-284211/restify1
+gcloud run deploy --image gcr.io/cart-284211/restify1 --platform managed
 
 http://127.0.0.1:5000
 # Flask-jwt-extended Section
