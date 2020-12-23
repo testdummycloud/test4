@@ -2,6 +2,8 @@
 
 gcloud builds submit --tag gcr.io/	cart-284211/restify1
 gcloud run deploy --image gcr.io/	cart-284211/restify1 --platform managed
+
+http://127.0.0.1:5000
 # Flask-jwt-extended Section
 
 This section presents the basic usage of an active flask JWT extension called `flask-jwt-extended`. We inherited and simplified the project structure from section 6 to demonstrate how to apply `flask-jwt-extended` to our project. 
