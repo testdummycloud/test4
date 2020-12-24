@@ -93,22 +93,22 @@ def create_tables():
     db.create_all()
 
 
-def app_launch():
-    api.add_resource(Store, '/store/<string:name>')
-    api.add_resource(StoreList, '/stores')
-    api.add_resource(Item, '/item/<string:name>')
-    api.add_resource(ItemList, '/items')
-    api.add_resource(UserRegister, '/register')
-    api.add_resource(UserLogin, '/login')
-    api.add_resource(User, '/user/<int:user_id>')
-    api.add_resource(TokenRefresh, '/refresh')
-    api.add_resource(UserLogout, '/logout')
-    api.add_resource(Chat, '/chat/<int:chat_id>')
-    # api.add_resource(ChatList, '/chats')
 
-    db.init_app(app)
-    if __name__ == '__main__':
-        app.run(debug=True, host="0.0.0.0", port=int(os.environ.get("PORT", 8080)))
-    #    app.run(debug=True, port=5000)
-    #    app.run(debug=True, host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
+api.add_resource(Store, '/store/<string:name>')
+api.add_resource(StoreList, '/stores')
+api.add_resource(Item, '/item/<string:name>')
+api.add_resource(ItemList, '/items')
+api.add_resource(UserRegister, '/register')
+api.add_resource(UserLogin, '/login')
+api.add_resource(User, '/user/<int:user_id>')
+api.add_resource(TokenRefresh, '/refresh')
+api.add_resource(UserLogout, '/logout')
+api.add_resource(Chat, '/chat/<int:chat_id>')
+# api.add_resource(ChatList, '/chats')
+
+db.init_app(app)
+if __name__ == '__main__':
+    app.run(debug=True, host="0.0.0.0", port=int(os.environ.get("PORT", 8080)))
+#    app.run(debug=True, port=5000)
+#    app.run(debug=True, host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
 
