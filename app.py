@@ -106,7 +106,6 @@ def app_launch():
     api.add_resource(Chat, '/chat/<int:chat_id>')
     # api.add_resource(ChatList, '/chats')
 
-
     if __name__ == '__main__':
         db.init_app(app)
         app.run(debug=True, host="0.0.0.0", port=int(os.environ.get("PORT", 8080)))

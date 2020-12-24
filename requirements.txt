@@ -3,3 +3,7 @@ Flask-RESTful
 Flask-JWT
 Flask-SQLAlchemy
 Flask-JWT-Extended
+gunicorn
+
+
+
